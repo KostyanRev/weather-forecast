@@ -1,0 +1,46 @@
+.cardContainer {
+  background-color: #70b7f5;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 200px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  cursor: pointer;
+  color: #ffffff;
+
+  .cardTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .btnsBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+
+.cardButton {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #0c30ff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+
+  &:active:not(.disabled) {
+    transform: scale(0.92);
+  }
+}
